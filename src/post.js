@@ -16,7 +16,9 @@ const dry = process.argv.includes('--dry-run');
 const cfg = JSON.parse(fs.readFileSync(path.join(root, 'config.json'), 'utf8'));
 const queuePath = path.join(root, 'content', 'queue.json');
 const queue = JSON.parse(fs.readFileSync(queuePath, 'utf8'));
-const GRAPH = 'https://graph.facebook.com/v21.0';
+// Facebook-login tokens use graph.facebook.com; Instagram-login tokens use graph.instagram.com (set IG_GRAPH_BASE).
+// IG_API_VERSION is optional (e.g. v23.0). Left empty, Meta uses the app's default version.
+const GRAPH = (process.env.IG_GRAPH_BASE || 'https://graph.facebook.com') + (process.env.IG_API_VERSION ? '/' + process.env.IG_API_VERSION : '');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function api(method, url, params) {

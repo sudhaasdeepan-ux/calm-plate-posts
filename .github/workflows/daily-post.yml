@@ -17,6 +17,8 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_BASE: ${{ vars.IG_GRAPH_BASE }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
         run: node src/post.js
       - name: Save queue status
         run: |
