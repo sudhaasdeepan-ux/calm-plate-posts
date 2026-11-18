@@ -3,8 +3,19 @@
   "brand": "Calm Plate Co.",
   "shopUrl": "https://www.etsy.com/shop/YourShop",
   "postsPerDay": 1,
-  "hashtags": ["#pickyeater", "#toddlermeals", "#mealplanning", "#parentingtips", "#kidsmeals", "#lunchboxideas"],
+  "hashtags": [
+    "#pickyeater",
+    "#toddlermeals",
+    "#mealplanning",
+    "#parentingtips",
+    "#kidsmeals",
+    "#lunchboxideas"
+  ],
   "disclaimer": "Organizing tips only, not medical or nutrition advice. Talk to your pediatrician about feeding concerns.",
-  "imageBaseUrl": "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/content/images",
-  "cardStyle": { "bg": "#FFF8EE", "fg": "#3A2E2A", "accent": "#E2603F" }
+  "imageBaseUrl": "https://raw.githubusercontent.com/sudhaasdeepan-ux/calm-plate-posts/main/content/images",
+  "cardStyle": {
+    "bg": "#FFF8EE",
+    "fg": "#3A2E2A",
+    "accent": "#E2603F"
+  }
 }
