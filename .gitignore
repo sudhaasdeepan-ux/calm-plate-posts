@@ -1,0 +1,9 @@
+.env
+node_modules/
+# Never publish the paid product files or working files in a public repo
+products/
+mockups/
+canva/
+*.bak.js
+cards.html
+cards.png
